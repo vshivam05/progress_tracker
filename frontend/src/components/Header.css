@@ -1,0 +1,53 @@
+
+.header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    font-size: 16px;
+    color: #000000;
+  }
+  
+  .dashboard {
+    font-weight: bold;
+  }
+  
+  .task-list {
+    color: #7a45f5; 
+    font-weight: normal;
+  }
+  
+
+  .signout-btn {
+    background-color: #7a45f5; 
+    color: #ffffff;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
+  .signout-btn:hover {
+    background-color: #6934d6; 
+  }
+  
