@@ -77,6 +77,11 @@ function TaskList() {
             "Content-Type": "application/json",
           },
         });
+        
+        const modalElement = document.getElementById("taskModal");
+      const modal = new window.bootstrap.Modal(modalElement);
+      modal.hide();
+        
         console.log("Task successfully updated:", response.data);
       } else {
         response = await axios.post(`${config.endpoint}/tasks/`, task, {
