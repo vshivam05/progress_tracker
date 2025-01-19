@@ -19,7 +19,7 @@ function TaskList() {
   const [currentTaskId, setCurrentTaskId] = useState(null);
   const token = localStorage.getItem("token");
 
-  const items = []; // for getting the id of select type
+  const items = []; 
 
   const handleDelete = async () => {
     console.log("Selected items to delete:", items);
@@ -79,8 +79,8 @@ function TaskList() {
         });
         
         const modalElement = document.getElementById("taskModal");
-      const modal = new window.bootstrap.Modal(modalElement);
-      modal.hide();
+        const modal = new window.bootstrap.Modal(modalElement);
+        modal.hide();
         
         console.log("Task successfully updated:", response.data);
       } else {
@@ -90,6 +90,7 @@ function TaskList() {
             "Content-Type": "application/json",
           },
         });
+        
         console.log("Task successfully added:", response.data);
       }
 
@@ -150,9 +151,9 @@ function TaskList() {
       >
         + Add task
       </button>
-      <button className="btn btn-danger ms-2" onClick = {handleDelete}>Delete selected</button>
+      <button className="btn btn-danger ms-2" onClick={handleDelete}>Delete selected</button>
 
-      {/* Modal */}
+     
       <div
         className="modal fade"
         id="taskModal"
@@ -262,7 +263,7 @@ function TaskList() {
       <br />
 
       <div>
-        <TaskTable tasks={tasks} onEditTask={openEditModal} items = {items}/>
+        <TaskTable tasks={tasks} onEditTask={openEditModal} items={items} />
       </div>
     </>
   );

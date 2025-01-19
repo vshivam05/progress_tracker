@@ -22,6 +22,10 @@ const taskSchema = new mongoose.Schema({
     endTime : {
         type : Date,
         required : true
+    },
+    blockchainHash: {
+        type: String,
+        required: false // This can be optional initially
     }
 });
 
